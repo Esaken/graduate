@@ -1,0 +1,30 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["hi", "hello", "hey"],
+        "responses": ["Hello! How can I assist you today?"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["bye", "goodbye", "see you later"],
+        "responses": ["Goodbye! Have a great day."]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["thanks", "thank you", "appreciate it"],
+        "responses": ["You're welcome! Let me know if you need any more help."]
+      },
+      {
+        "tag": "product_inquiry",
+        "patterns": ["What products do you have?", "Can you recommend some products?", "What kind of shoes do you sell?"],
+        "responses": ["We have a wide range of shoes for every occasion! From casual sneakers to formal dress shoes."]
+      },
+      {
+        "tag": "price_inquiry",
+        "patterns": ["How much does it cost?", "What is the price?", "Can you tell me the price?"],
+        "responses": ["Our prices vary depending on the product. Please visit our website for more details."]
+      }
+    ]
+  }
+  
