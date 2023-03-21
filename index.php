@@ -61,23 +61,21 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
 
   
  
- <?php include 'assets/homepage.php'; ?>
+ <?php include 'homepage.php'; ?>
 
 
-<!-- image -->
-  <!-- <img data-interchange="[images/bolt-retina.jpg, (retina)], [images/bolt-landscape.jpg, (large)], [images/bolt-mobile.jpg, (mobile)], [images/bolt-landscape.jpg, (medium)]">
-    <noscript><img src="images/bolt-landscape.jpg"></noscript>   -->
+
 
         </br>
         <!-- video -->
-    <div style="position: relative; overflow: hidden; padding-top: 56.25%;"><iframe src="https://share.synthesia.io/embeds/videos/fe42cde4-3047-4570-9538-5d151037be56" loading="lazy" title="Synthesia video player - Your AI video" allow="encrypted-media; fullscreen;" style="position: absolute; width: 28%; height: 28%; top: 4vh; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+    <div style="position: relative; overflow: hidden; padding-top: 56.25%;"><iframe src="https://share.synthesia.io/embeds/videos/fe42cde4-3047-4570-9538-5d151037be56" loading="lazy" title="Synthesia video player - Your AI video" allow="encrypted-media; fullscreen;" style="position: absolute; width: 48%; height: 48%; top: 1vh; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
 
 
 
 
       <!-- call chatbot.php -->
-<?php include 'chatbot/chatbot.php'; ?>
-
+ 
+      <button> <a href="http://127.0.0.1:5000">chatbot</button>
 <!-- 
 <div id="chatbox"></div>
   <div>
@@ -102,23 +100,7 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
     </div> -->
 
 
-<script>
-function sendMsg() {
-  var usermsg = document.getElementById("usermsg").value;
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var response = JSON.parse(this.responseText)["response"];
-      var chatbox = document.getElementById("chatbox");
-      chatbox.innerHTML += "<p><strong>You:</strong> " + usermsg + "</p>";
-      chatbox.innerHTML += "<p><strong>Bot:</strong> " + response + "</p>";
-    }
-  };
-  xhttp.open("GET", "/get_response?msg=" + usermsg, true);
-  xhttp.send();
-}
 
-</script>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/chatbot.js"></script>
     <script src="js/vendor/modernizr.js"></script>

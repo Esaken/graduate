@@ -83,13 +83,13 @@ include 'config.php';
               <label for="right-label" class="right inline">First Name</label>
             </div>
             <div class="small-8 columns end">
-              <?php
+            <?php
 
-                $result = $mysqli->query('SELECT * FROM users WHERE id='.$_SESSION['id']);
+            $result = $mysqli->query('SELECT * FROM users WHERE id='.$_SESSION['id']);
 
-                if($result === FALSE){
-                  die(mysql_error());
-                }
+            if($result === FALSE){
+              die(mysql_error());
+            }
 
                 if($result) {
                   $obj = $result->fetch_object();
