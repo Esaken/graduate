@@ -27,7 +27,7 @@
         New Year Season
       </h2>
       <h3>From 1st Jan to 31st Jan</h3>
-      <a href="../products.php" class="btn">SHOP NOW</a>
+      <a href="products.php" class="btn">SHOP NOW</a>
     </div>
 
   </header>
