@@ -189,7 +189,9 @@ else{
 
      
    
-
+<a href='sql/users-report.php' class='btn btn-primary m-b-1em'>Show all users</a>
+<a href='sql/products-report.php' class='btn btn-primary m-b-1em'>All products</a>
+<a href='sql/cart-report.php' class='btn btn-primary m-b-1em'>CART report</a>
 
     
         <footer style="margin-top:10px;">
